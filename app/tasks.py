@@ -5,7 +5,7 @@ import json
 import ssl
 from celery import Celery
 
-redis_url = "redis://user:password@host:port"
+redis_url = "redis://user:pd@host:port"
 
 celery_app = Celery("tasks", 
                     broker=redis_url,
